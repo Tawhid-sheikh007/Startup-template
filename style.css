@@ -629,9 +629,14 @@ resposive
     grid-template-columns: repeat(1, 1fr);
   }
   /* design */
+  .design-wrapper{
+    position: relative;
+    height: 100vh;
+  }
   .design-container{
     flex-direction: column;
     padding: 10px 20px;
+   
   }
   .design-container .design-details{
     text-align: center;
@@ -647,11 +652,14 @@ resposive
     overflow: hidden;
   }
   .design-image{
-    width: 400px;
+    position: absolute;
+    bottom: 20px;
+    width: 320px;
     overflow: hidden;
   }
   .design-image img{
-    width: 350px;
+    width: 320px;
+    border: 1px solid red;
     height: auto;
   }
   /* team */
