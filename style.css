@@ -608,21 +608,39 @@ footer section style
 resposive
 *** */
 
-/* resposive for max width 600px */
+/* resposive for (mobile) max width 600px */
 @media screen and (max-width:600px) {
   /* nav */
   .menu li{
     display: none;
   }
+  .menu ul{
+    float: right;
+  }
+  .d-flex{
+    background-color: #3fcc1b;
+    display: block;
+  }
   .logo{
     letter-spacing: 8px;
     font-weight: bold;
     font-size: 30px;
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
   /* header */
-  .header-container .wrapper-title{
+  .header-container {
+    left: 20px;
+  }
+  .wrapper-title{
    display: block;
    font-size: 40px;
+  }
+  .wrapper-sub-title{padding-right: 20px;}
+  .icons{
+    left: 100px;
   }
   /* about */
   .about-card-wrapper{
@@ -644,6 +662,7 @@ resposive
   .design-title{
     font-size: 35px;
     font-weight: bold;
+    margin-top: 100px;
   }
   .design-btn{
     margin-bottom: 30px;
@@ -652,14 +671,12 @@ resposive
     overflow: hidden;
   }
   .design-image{
-    position: absolute;
-    bottom: 20px;
-    width: 320px;
+    width: 350px;
     overflow: hidden;
+    margin-top: 50px;
   }
   .design-image img{
-    width: 320px;
-    border: 1px solid red;
+    width: 350px;
     height: auto;
   }
   /* team */
