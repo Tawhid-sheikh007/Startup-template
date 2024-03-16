@@ -618,14 +618,12 @@ resposive
     float: right;
   }
   .d-flex{
-    background-color: #3fcc1b;
     display: block;
   }
   .logo{
     letter-spacing: 8px;
     font-weight: bold;
     font-size: 30px;
-    border: 1px solid red;
     margin: 0;
     padding: 0;
     text-align: center;
