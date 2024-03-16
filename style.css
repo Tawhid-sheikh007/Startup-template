@@ -643,6 +643,13 @@ resposive
   .design-btn{
     margin-bottom: 30px;
   }
+  .design-details{
+    overflow: hidden;
+  }
+  .design-image{
+    width: 400px;
+    overflow: hidden;
+  }
   /* team */
   .team-card-wrapper{
     grid-template-columns: repeat(1,1fr);
@@ -768,7 +775,14 @@ resposive for tablet( min width 601px and (max-width:900px))
     margin-bottom: 50px;
   }
   .design-btn{
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+  }
+  .design-details{
+    overflow: hidden;
+  }
+  .design-image{
+    width: 800px;
+    overflow: hidden;
   }
   /* team */
   .team-wrapper{height: 100vh;}
