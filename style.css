@@ -485,6 +485,9 @@ priging section
   text-align: center;
   padding: 8px 25px;
 }
+.p-bt a{
+  background-color: #F44336;
+}
 .p-sign-btn a:hover{
   background-color: #9E9E9E;
   color: #000;
@@ -600,3 +603,241 @@ footer section style
   font-weight: bold;
   cursor: pointer;
 }
+
+/* ***
+resposive
+*** */
+
+/* resposive for max width 600px */
+@media screen and (max-width:600px) {
+  /* nav */
+  .menu li{
+    display: none;
+  }
+  .logo{
+    letter-spacing: 8px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  /* header */
+  .header-container .wrapper-title{
+   display: block;
+   font-size: 40px;
+  }
+  /* about */
+  .about-card-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* design */
+  .design-container{
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .design-container .design-details{
+    text-align: center;
+  }
+  .design-title{
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .design-btn{
+    margin-bottom: 30px;
+  }
+  /* team */
+  .team-card-wrapper{
+    grid-template-columns: repeat(1,1fr);
+    padding: 0;
+  }
+  .team-card-container{
+    box-shadow: 5px 5px 8px  rgb(202, 199, 199);
+    border: 0.1px solid black;
+  }
+  /* obj */
+  .obj-wrapper{
+    width: 100%;
+    overflow: hidden;
+    margin: 50px 0;
+    padding: 20px;
+  }
+  .obj{margin: 0;
+    padding: 20px;
+  }
+  .obj p{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+  /* work */
+  .work-container-im{
+    grid-template-columns: repeat(1,1fr);
+  }
+  /* skill */
+  .sikll-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 10 20px;
+    padding: 0;
+  }
+  .skill-details h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .skill-details p{
+    text-align: justify;
+    background-color: #fff;
+  }
+  /* priging */
+  .p-card-con-wra{
+    grid-template-columns: repeat(1,1fr);
+  }
+  /* contact */
+  .contact-wrapper{
+    margin: 0;
+    padding: 20px;
+  }
+  .form input{ 
+    width: 70%;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  .map{
+    max-height: 300px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .map img{
+    height: 300px;
+  }
+  /* footer */
+  .footer-container{
+    height: 250px;
+  }
+}
+
+/* 
+resposive for tablet( min width 601px and (max-width:900px)) 
+*/
+@media screen and (min-width:601px) and (max-width:900px) {
+  /* header */
+  .header-container{
+    margin-top: 100px;
+  }
+  .wrapper-title,.wrapper-sub-title,.btn1{
+    margin: 40px 0;
+  }
+  .wrapper-sub-title{
+    font-size: 24px;
+  }
+  .btn1 a{
+    font-size: 24px;
+  }
+  .icons{
+    margin-top: 400px;
+  }
+  /* about */
+  .About-container{
+    height: 100vh;
+  }
+  .about-card-wrapper{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 100px;
+    column-gap: 50px;
+    padding: 0;
+    margin-top: 100px;
+  }
+  .about-card-contentainer{
+    height: 380px;
+    width: 300px;
+  }
+  /* design */
+  .design-container{
+    flex-direction: column;
+    height: 100vh;
+  }
+  .design-container .design-details{
+    text-align: center;
+    margin:100px ;
+  }
+  .design-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px;
+  }
+  .design-des{
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .design-btn{
+    margin-bottom: 30px;
+  }
+  /* team */
+  .team-wrapper{height: 100vh;}
+  .team-title{
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .team-card-wrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
+  /* work */
+  .work-wrapper{height: 100vh;}
+  .work-wrapper h1{
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .work-wrapper p{
+    font-size: 24px;
+  }
+  .work-container-im{
+    grid-template-columns: repeat(2,1fr);
+  }
+  /* skill */
+  .sikll-wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 200px 40px 100px 40px;
+    padding: 50px;
+  }
+  .skill-details h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .skill-details p{
+    text-align: justify;
+    background-color: #fff;
+    margin: 50px 0;
+    font-size: 22px;
+  }
+  .skill-progress{
+    align-items: center;
+    justify-items: center;
+  }
+  /* priging */
+  .priging-wrapper{height: 100vh;
+  overflow: hidden;}
+  .p-card-con-wra{
+    grid-template-columns: repeat(3,1fr);
+  }
+  /* contact */
+  .contact-wrapper{
+    height: 100vh;
+  }
+  .form input{ 
+    margin-bottom:30px ;
+  }
+  .map{
+    max-height: 350px;
+    margin-bottom: 100px;
+  }
+  .map img{
+    height: 500px;
+  }
+  /* footer */
+  .footer-container{
+    height: 250px;
+  }
+} 
