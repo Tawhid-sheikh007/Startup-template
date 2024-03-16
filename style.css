@@ -619,14 +619,19 @@ resposive
   }
   .d-flex{
     display: block;
+    background-color: white;
   }
   .logo{
     letter-spacing: 8px;
     font-weight: bold;
     font-size: 30px;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     text-align: center;
+  }
+  .logo:hover{
+    background-color: white;
+    
   }
   /* header */
   .header-container {
@@ -646,13 +651,16 @@ resposive
   }
   /* design */
   .design-wrapper{
-    position: relative;
     height: 100vh;
+    overflow: hidden;
   }
   .design-container{
     flex-direction: column;
-    padding: 10px 20px;
-   
+    margin: 50px 10px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
   .design-container .design-details{
     text-align: center;
@@ -660,8 +668,7 @@ resposive
   .design-title{
     font-size: 35px;
     font-weight: bold;
-    margin-top: 100px;
-  }
+   }
   .design-btn{
     margin-bottom: 30px;
   }
@@ -669,13 +676,14 @@ resposive
     overflow: hidden;
   }
   .design-image{
-    width: 350px;
+    width: 300px;
+    height: auto;
     overflow: hidden;
-    margin-top: 50px;
   }
   .design-image img{
-    width: 350px;
+    max-width: 300px;
     height: auto;
+    
   }
   /* team */
   .team-card-wrapper{
