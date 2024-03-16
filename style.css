@@ -650,6 +650,10 @@ resposive
     width: 400px;
     overflow: hidden;
   }
+  .design-image img{
+    width: 480px;
+    height: auto;
+  }
   /* team */
   .team-card-wrapper{
     grid-template-columns: repeat(1,1fr);
